@@ -1,0 +1,37 @@
+{
+  "name": "flare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg . --out-path dist --targets node18-linux-x64,node18-win-x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pkg": {
+    "assets": [],
+    "targets": [
+      "node18-linux-x64",
+      "node18-win-x64"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lunixizm0/Flare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Lunixizm0/Flare/issues"
+  },
+  "homepage": "https://github.com/Lunixizm0/Flare#readme",
+  "dependencies": {
+    "systeminformation": "^5.28.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  }
+}
