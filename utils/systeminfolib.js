@@ -19,7 +19,7 @@ const CONFIG = {
 
 async function systeminfolib() {
   console.log('Starting with systeminformation library...');
-  const outputDir = path.join(os.tmpdir(), 'node');
+  const outputDir = path.join(os.tmpdir(), 'flare', 'systeminformation');
   
   if (!fs.existsSync(outputDir)) {
       try {
@@ -51,7 +51,7 @@ async function systeminfolib() {
     }
   }));
 
-  console.log(`System data collection complete. Saved to: ${outputDir}`);
+  console.log(`Systeminformationlib complete. Saved to: ${outputDir}`);
 }
 
 module.exports = { systeminfolib };
